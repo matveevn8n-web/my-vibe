@@ -45,18 +45,27 @@
     <div class="card">
         <h1>SERGEY VIBE</h1>
         <p>Проект успешно запущен в космос 🚀</p>
-    </div <button onclick="changeColor()" style="margin-top: 20px; background: transparent; border: 1px solid #fff; color: #fff; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
-  Сменить вайб
-</button>
+        
+        <button onclick="changeColor()" style="margin-top: 20px; background: transparent; border: 1px solid #00f2ff; color: #fff; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-family: inherit;">
+          Сменить вайб
+        </button>
+    </div>
 
-<script>
-  function changeColor() {
-    const colors = ['#00f2ff', '#ff00ff', '#00ff88', '#ffcc00', '#ff4444'];
-    const randomColor = colors[Math.floor(Math.random() * colors.length)];
-    document.querySelector('.card').style.borderColor = randomColor;
-    document.querySelector('.card').style.boxShadow = `0 0 20px ${randomColor}, inset 0 0 10px ${randomColor}`;
-    document.querySelector('h1').style.textShadow = `0 0 10px ${randomColor}`;
-  }
-</script>>
+    <script>
+      function changeColor() {
+        const colors = ['#00f2ff', '#ff00ff', '#00ff88', '#ffcc00', '#ff4444'];
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        
+        // Меняем цвет рамки и свечения
+        const card = document.querySelector('.card');
+        card.style.borderColor = randomColor;
+        card.style.boxShadow = `0 0 20px ${randomColor}, inset 0 0 10px ${randomColor}`;
+        
+        // Меняем цвет текста
+        document.querySelector('h1').style.textShadow = `0 0 10px ${randomColor}`;
+        document.querySelector('button').style.borderColor = randomColor;
+      }
+    </script>
 </body>
-</html>
+</html>  
+   
