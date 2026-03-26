@@ -42,6 +42,7 @@
     </style>
 </head>
 <body>
+    <audio id="click-sound" src="https://www.fesliyanstudios.com/play-mp3/387"></audio>
     <div class="card">
         <h1>SERGEY VIBE</h1>
         <p>Проект успешно запущен в космос 🚀</p>
@@ -52,7 +53,9 @@
     </div>
 
     <script>
-      function changeColor() {
+      function changeColor() const audio = document.getElementById('click-sound');
+    audio.currentTime = 0; // Сбрасываем звук в начало, чтобы можно было кликать быстро
+    audio.play(); {
     const colors = ['#00f2ff', '#ff00ff', '#00ff88', '#ffcc00', '#ff4444', '#ffffff'];
     const phrases = [
         'Вайб пойман! 🌊',
