@@ -62,6 +62,12 @@ document.querySelector('h1').innerText = `VIBE CLICKS: ${count}`; // Вывод�
     
     // 2. Наши списки
     const colors = ['#00f2ff', '#ff00ff', '#00ff88', '#ffcc00', '#ff4444', '#ffffff'];
+    const backgrounds = [
+        'url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop")', // Космос
+        'url("https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=2070&auto=format&fit=crop")', // Абстракция
+        'url("https://images.unsplash.com/photo-1464802686167-b939a67e06a1?q=80&w=2070&auto=format&fit=crop")', // Звезды
+        'url("https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?q=80&w=2071&auto=format&fit=crop")'  // Галактика
+    ];
     const phrases = [
         'Вайб пойман! 🌊',
         'Система перегружена стилем 😎',
@@ -74,6 +80,7 @@ document.querySelector('h1').innerText = `VIBE CLICKS: ${count}`; // Вывод�
     // 3. Выбираем случайные данные
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
+    const randomBg = backgrounds[Math.floor(Math.random() * backgrounds.length)];
     
     // 4. Меняем стили на странице
     const card = document.querySelector('.card');
@@ -81,6 +88,8 @@ document.querySelector('h1').innerText = `VIBE CLICKS: ${count}`; // Вывод�
     card.style.boxShadow = `0 0 20px ${randomColor}, inset 0 0 10px ${randomColor}`;
     document.querySelector('h1').style.textShadow = `0 0 10px ${randomColor}`;
     document.querySelector('button').style.borderColor = randomColor;
+    document.body.style.backgroundImage = randomBg;
+    document.body.style.backgroundSize = 'cover'; // Чтобы картинка была на весь экран
     
     // 5. Меняем текст
     document.querySelector('p').innerText = randomPhrase;
