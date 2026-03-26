@@ -53,34 +53,39 @@
     </div>
 
     <script>
-      function changeColor() const audio = document.getElementById('click-sound');
-    audio.currentTime = 0; // Сбрасываем звук в начало, чтобы можно было кликать быстро
-    audio.play(); {
+      function changeColor() {
+    // 1. Сначала подгружаем звук
+    const audio = document.getElementById('click-sound');
+    
+    // 2. Наши списки
     const colors = ['#00f2ff', '#ff00ff', '#00ff88', '#ffcc00', '#ff4444', '#ffffff'];
     const phrases = [
         'Вайб пойман! 🌊',
         'Система перегружена стилем 😎',
         'Космос на связи 🚀',
         'Матрица обновлена 🤖',
-        'Матвев 🤖',
-        'Чистый кайф... ✨',
+        'Матвеев',
+        'Чистый кайф... ✨'
     ];
     
+    // 3. Выбираем случайные данные
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
     
-    // 1. Меняем цвета (как раньше)
+    // 4. Меняем стили на странице
     const card = document.querySelector('.card');
     card.style.borderColor = randomColor;
     card.style.boxShadow = `0 0 20px ${randomColor}, inset 0 0 10px ${randomColor}`;
     document.querySelector('h1').style.textShadow = `0 0 10px ${randomColor}`;
     document.querySelector('button').style.borderColor = randomColor;
     
-    // 2. А теперь меняем ТЕКСТ в абзаце <p>
+    // 5. Меняем текст
     document.querySelector('p').innerText = randomPhrase;
     document.querySelector('p').style.color = randomColor;
+
+    // 6. Играем звук
+    if(audio) {
+        audio.currentTime = 0;
+        audio.play();
+    }
 }
-    </script>
-</body>
-</html>  
-   
