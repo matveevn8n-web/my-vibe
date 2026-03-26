@@ -57,6 +57,24 @@
       function changeColor() {
         count = count + 1; // Увеличиваем счет на 1 при каждом нажатии
 document.querySelector('h1').innerText = `VIBE CLICKS: ${count}`; // Выводим счет вместо заголовка
+// ПРОВЕРКА НА СЕКРЕТНУЮ ФИШКУ
+    if (count === 15) {
+        // 1. Меняем заголовок на пафосный
+        document.querySelector('h1').innerText = "🔥 GOD MODE ACTIVATED 🔥";
+        document.querySelector('h1').style.color = "gold";
+        
+        // 2. Текст поздравления
+        document.querySelector('p').innerText = "Сергей, ты официально взломал этот вайб!";
+        document.querySelector('p').style.fontSize = "2rem";
+        
+        // 3. Заставляем карточку бешено крутиться
+        const card = document.querySelector('.card');
+        card.style.transition = "1s";
+        card.style.transform = "rotate(360deg) scale(1.2)";
+        
+        // 4. Можно добавить звук фанфар (по желанию)
+        alert("УРОВЕНЬ ПРОЙДЕН! Ты настоящий кодер! 😎");
+    }
     // 1. Сначала подгружаем звук
     const audio = document.getElementById('click-sound');
     
