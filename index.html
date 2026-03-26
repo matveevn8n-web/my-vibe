@@ -53,18 +53,30 @@
 
     <script>
       function changeColor() {
-        const colors = ['#00f2ff', '#ff00ff', '#00ff88', '#ffcc00', '#ff4444'];
-        const randomColor = colors[Math.floor(Math.random() * colors.length)];
-        
-        // Меняем цвет рамки и свечения
-        const card = document.querySelector('.card');
-        card.style.borderColor = randomColor;
-        card.style.boxShadow = `0 0 20px ${randomColor}, inset 0 0 10px ${randomColor}`;
-        
-        // Меняем цвет текста
-        document.querySelector('h1').style.textShadow = `0 0 10px ${randomColor}`;
-        document.querySelector('button').style.borderColor = randomColor;
-      }
+    const colors = ['#00f2ff', '#ff00ff', '#00ff88', '#ffcc00', '#ff4444', '#ffffff'];
+    const phrases = [
+        'Вайб пойман! 🌊',
+        'Система перегружена стилем 😎',
+        'Космос на связи 🚀',
+        'Матрица обновлена 🤖',
+        'Чистый кайф... ✨',
+        'Матвеев'
+    ];
+    
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
+    
+    // 1. Меняем цвета (как раньше)
+    const card = document.querySelector('.card');
+    card.style.borderColor = randomColor;
+    card.style.boxShadow = `0 0 20px ${randomColor}, inset 0 0 10px ${randomColor}`;
+    document.querySelector('h1').style.textShadow = `0 0 10px ${randomColor}`;
+    document.querySelector('button').style.borderColor = randomColor;
+    
+    // 2. А теперь меняем ТЕКСТ в абзаце <p>
+    document.querySelector('p').innerText = randomPhrase;
+    document.querySelector('p').style.color = randomColor;
+}
     </script>
 </body>
 </html>  
