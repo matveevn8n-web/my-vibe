@@ -1,0 +1,9 @@
+{
+  "name": "new-volga",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node src/build.mjs",
+    "photos": "node src/optimize-photos.mjs"
+  }
+}

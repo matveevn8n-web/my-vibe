@@ -1,0 +1,67 @@
+{
+  "baseUrl": "https://volga.matveevapartments.ru",
+  "basePath": "",
+  "updated": "2026-11-19",
+  "name": "Matveev Apartments",
+  "legalName": "ИП Матвеев Сергей Геннадьевич",
+  "ogrnip": "315631600001554",
+  "legalAddress": "443080, Самара, Московское шоссе, д. 27, офис 316",
+  "phoneDisplay": "+7 917 948-77-88",
+  "phoneTel": "+79179487788",
+  "email": "info@matveevapartments.ru",
+  "whatsapp": "https://wa.me/79179487788",
+  "telegram": "https://t.me/Serg_1506",
+  "vk": "https://vk.com/matveevapartments",
+  "youtube": "https://www.youtube.com/@matveevapartments5899",
+  "youtubeCheckin": "https://www.youtube.com/watch?v=HizIFazra6U",
+  "offerUrl": "https://matveevapartments.ru/contract",
+  "privacyUrl": "https://matveevapartments.ru/privacy-policy",
+  "geo": {
+    "lat": 53.195873,
+    "lng": 50.100193,
+    "region": "RU-SAM",
+    "placename": "Самара"
+  },
+  "rating": { "value": "9.9", "best": "10", "count": "500" },
+  "checkIn": "15:00",
+  "checkOut": "12:00",
+  "promo": {
+    "code": "СНОВА",
+    "label": "−10% при прямом бронировании по промокоду СНОВА",
+    "note": "от 5 ночей — особые условия · документы для командировок"
+  },
+  "voiceSearch": true,
+  "metrika": { "id": 104131379, "webvisor": false },
+  "bnovo": {
+    "uid": "e358a8dd-e919-467b-989e-ce34e5b25142",
+    "widget": "https://widget.reservationsteps.ru/js/bnovo.js",
+    "module": "https://reservationsteps.ru/rooms/index/e358a8dd-e919-467b-989e-ce34e5b25142"
+  },
+  "heroes": [
+    {
+      "id": "view",
+      "alt": "Панорамные окна Matveev Galaxy: вид на зимнюю Самару с высокого этажа"
+    },
+    {
+      "id": "galaxy-435",
+      "alt": "Интерьер Matveev Galaxy #435: кровать, кухня-остров и бетонная стена"
+    }
+  ],
+  "home": {
+    "title": "Квартиры посуточно у Волги в центре Самары | Matveev Apartments",
+    "description": "Дизайнерские квартиры посуточно в центре Самары рядом с Волгой и набережной: рейтинг 9.9, уборка после каждого гостя, заезд 24/7. От 5 000 ₽ в сутки.",
+    "h1": "Квартиры посуточно у Волги в центре Самары"
+  },
+  "sharedAmenities": [
+    "Кровать king-size 180×200",
+    "Интернет",
+    "Smart TV 50 дюймов",
+    "Кухня",
+    "Капсульная кофемашина",
+    "Стиральная машина и утюг",
+    "Сатиновое бельё",
+    "Косметика",
+    "Чай и кофе в подарок",
+    "Можно с детьми"
+  ]
+}
