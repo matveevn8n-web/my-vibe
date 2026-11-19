@@ -1,0 +1,38 @@
+{
+  "view": {
+    "width": 960,
+    "height": 1276
+  },
+  "galaxy-435": {
+    "width": 960,
+    "height": 640
+  },
+  "galaxy-219": {
+    "width": 960,
+    "height": 640
+  },
+  "downtown-192": {
+    "width": 960,
+    "height": 1280
+  },
+  "downtown-93": {
+    "width": 960,
+    "height": 720
+  },
+  "downtown-33": {
+    "width": 960,
+    "height": 1440
+  },
+  "center-41": {
+    "width": 960,
+    "height": 720
+  },
+  "city-105": {
+    "width": 960,
+    "height": 1440
+  },
+  "city-239": {
+    "width": 960,
+    "height": 1440
+  }
+}
